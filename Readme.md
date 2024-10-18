@@ -1,5 +1,9 @@
 ## GitHub-Beholder
-[Githib activity](https://roadmap.sh/projects/github-user-activity)
+
+[Github Activiy](https://roadmap.sh/projects/github-user-activity)
+
+
+
 **GitHub-Beholder** is a simple command-line interface (CLI) application that fetches the recent activity of a specified GitHub user and displays it in the terminal. This project helps you practice programming skills, such as working with APIs, handling JSON data, and building a CLI application.
 
 ### Requirements
