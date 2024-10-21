@@ -59,7 +59,6 @@ impl Event {
 #[derive(Parser)]
 #[command(author = "Hemenguelbindi", version = "0.0.1", about = "CLI beholder for activity in GitHub", long_about = None)]
 pub struct Cli {
-    /// Check last activity user
     pub name: String,
 }
 
@@ -83,7 +82,6 @@ impl Cli {
         if response.status().is_success() {
             let response_text = response.text().await?;
             
-            // Десериализуем ответ с обработкой ошибок
             match serde_json::from_str::<Vec<Event>>(&response_text) {
                 Ok(events) => {
                     if events.is_empty() {
